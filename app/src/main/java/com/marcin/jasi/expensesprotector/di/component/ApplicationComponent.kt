@@ -3,7 +3,6 @@ package com.marcin.jasi.expensesprotector.di.component
 import com.marcin.jasi.expensesprotector.Application
 import com.marcin.jasi.expensesprotector.database.AppDatabase
 import com.marcin.jasi.expensesprotector.di.module.ApplicationBindsModule
-import com.marcin.jasi.expensesprotector.di.module.ApplicationBindsViewModelsModule
 import com.marcin.jasi.expensesprotector.di.module.ApplicationModule
 import com.marcin.jasi.expensesprotector.general.domain.helpers.PostExecutionThread
 import com.marcin.jasi.expensesprotector.general.domain.helpers.ThreadExecutor
@@ -15,8 +14,7 @@ import dagger.android.AndroidInjectionModule
         modules = [
             ApplicationModule::class,
             ApplicationBindsModule::class,
-            AndroidInjectionModule::class,
-            ApplicationBindsViewModelsModule::class
+            AndroidInjectionModule::class
         ]
 )
 interface ApplicationComponent {

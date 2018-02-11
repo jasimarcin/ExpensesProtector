@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
 @ActivityScope
-clasSplashScreenActivity : AppCompatActivity() {
+class SplashScreenActivity : AppCompatActivity() {
 
     companion object {
         const val DELAY_TIME: Long = 2L

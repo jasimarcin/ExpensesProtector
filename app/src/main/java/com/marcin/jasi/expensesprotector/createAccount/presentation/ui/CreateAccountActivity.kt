@@ -1,5 +1,6 @@
 package com.marcin.jasi.expensesprotector.createAccount.presentation.ui
 
+import android.arch.lifecycle.ViewModelProvider
 import android.arch.lifecycle.ViewModelProviders
 import android.content.Context
 import android.content.Intent
@@ -19,6 +20,7 @@ import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.subjects.BehaviorSubject
 import javax.inject.Inject
+
 
 @ActivityScope
 class CreateAccountActivity : CommonActivity<CreateAccountViewState, CreateAccountIntent, CreateAccountViewModel>() {
@@ -42,7 +44,7 @@ class CreateAccountActivity : CommonActivity<CreateAccountViewState, CreateAccou
     lateinit var confirmPasswordInput: EditText
 
     @Inject
-    lateinit var viewModelFactory: ViewModelFactory
+    lateinit var viewModelFactory: ViewModelProvider.Factory
 
     private val intentPublisher: BehaviorSubject<CreateAccountIntent> = BehaviorSubject.create()
     private val disposable: CompositeDisposable = CompositeDisposable()

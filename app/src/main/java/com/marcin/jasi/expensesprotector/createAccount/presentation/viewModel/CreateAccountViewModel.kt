@@ -2,6 +2,7 @@ package com.marcin.jasi.expensesprotector.createAccount.presentation.viewModel
 
 import com.marcin.jasi.expensesprotector.createAccount.presentation.ui.CreateAccountIntent
 import com.marcin.jasi.expensesprotector.createAccount.presentation.ui.CreateAccountViewState
+import com.marcin.jasi.expensesprotector.di.annotation.ActivityScope
 import com.marcin.jasi.expensesprotector.general.presenter.common.ViewModel
 import io.reactivex.Observable
 import io.reactivex.ObservableTransformer

@@ -1,6 +1,7 @@
 package com.marcin.jasi.expensesprotector.login.presentation.viewModel
 
 import android.util.Log
+import com.marcin.jasi.expensesprotector.di.annotation.ActivityScope
 import com.marcin.jasi.expensesprotector.general.domain.entity.User
 import com.marcin.jasi.expensesprotector.general.domain.helpers.PostExecutionThread
 import com.marcin.jasi.expensesprotector.general.domain.helpers.ThreadExecutor
@@ -15,7 +16,6 @@ import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.PublishSubject
 import java.util.concurrent.atomic.AtomicBoolean
 import javax.inject.Inject
-
 
 class LoginActivityViewModel @Inject constructor(
         private val loginUserUseCase: LoginUserUseCase,

@@ -2,6 +2,7 @@ package com.marcin.jasi.expensesprotector.login.injection.module
 
 import com.marcin.jasi.expensesprotector.database.AppDatabase
 import com.marcin.jasi.expensesprotector.database.entities.UserTable
+import com.marcin.jasi.expensesprotector.di.annotation.ActivityScope
 import com.marcin.jasi.expensesprotector.general.data.common.DataMapper
 import com.marcin.jasi.expensesprotector.general.domain.entity.User
 import com.marcin.jasi.expensesprotector.general.domain.helpers.PostExecutionThread
@@ -39,6 +40,7 @@ class LoginActivityModule {
             : LoginActivityRepository = LoginActivityRepositoryImpl(memoryDataSource)
 
     @Provides
+    @ActivityScope
     fun provideLoginUseCase(repository: LoginActivityRepository,
                             threadExecutor: ThreadExecutor,
                             postExecutionThread: PostExecutionThread)
