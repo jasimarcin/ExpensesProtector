@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExpensesProtector</string>
+
+    <string name="splash_screen_name">EXPENSES PROTECTOR</string>
+    <string name="login_activity_login">LOGIN</string>
+    <string name="login_activity_password">PASSWORD</string>
+    <string name="login_activity_cancel">CANCEL</string>
+    <string name="create_account_activity_confirm_text">CONFIRM</string>
+    <string name="create_account_activity_create">CREATE</string>
+</resources>
